@@ -1,0 +1,130 @@
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/tiendagc.jpg");
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.contact p{
+    color: #ffffff;
+}
+
+.contact::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: 1s;
+    background: rgba(25, 24, 24, 0.668);
+}
+
+.contact-form{
+    margin-top: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.contact-form ul{
+    list-style: none;
+}
+
+.contact-form ul li img{
+    width: 40px;
+    height: 30px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.contact-form ul li p{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(125, 120, 120);
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.contact-form form input {
+    border: none;
+    width: 380px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.contact-form form input::placeholder textarea::placeholder{
+    font-weight: 150;
+    color: rgb(168,167,167);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.contact-form form textarea{
+    resize: none;
+    border: none;
+}
+
+.contact-form input[type="submit"]{
+    background-color: #00a2ff;
+    font-size: 16px;
+    width: 200px;
+    display: block;
+    border: none;
+    border-radius: 7px;
+    margin: 0px auto;
+    color: #fff;
+}
+
+/* Media Query para pantallas más pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    .contact {
+        height: auto; /* Permitir que la altura sea dinámica */
+        background-attachment: scroll; /* Eliminar fondo fijo en móviles */
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .contact-form ul {
+        margin-bottom: 20px;
+        margin-left: 15px;
+    
+        
+    }
+
+    .contact-form form {
+        width: 100%; /* Ajustar el ancho del formulario en móviles */
+        max-width: none;
+        padding: 0 30px;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 100%;
+        max-width: 200px;
+    }
+}

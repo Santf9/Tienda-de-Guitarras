@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./header.css);
+@import url(./home.css);
+@import url(./about.css);
+@import url(./instrumentos.css);
+@import url(./contacto.css);
+@import url(./footer.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}

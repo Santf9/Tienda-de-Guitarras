@@ -1,0 +1,114 @@
+.about{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(228, 221, 213);
+
+}
+
+.title{
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+}
+
+.title-instumentos{
+    padding-top: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-family: "Raleway", sans-serif;
+}
+
+hr{
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    border: 2px solid #D5B981;
+    border-radius: 2px;
+
+}
+
+.descripcion{
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(107, 106, 106);
+}
+
+
+.info{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #btn-about{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    
+    .img-group img {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+}
+
+.img-group img{
+    display: block;
+    height: 340px;  
+    width: 520px;
+    border-radius: 30px;
+    
+}
+
+.info-group{
+    margin: 0px 20px 50px;
+}
+
+.info-group h4{
+    text-align: left;
+    font-size: 30px;
+    color: rgb(44,43,43);
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    
+}
+
+.info-group p{
+    margin-top: 10px;
+    padding: 10px 0px;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#btn-about{
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: 250px;
+    text-decoration: none;
+    border: 3px solid transparent;
+    background-color: #00a2ff;
+    color: white;
+}
